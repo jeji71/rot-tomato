@@ -348,13 +348,24 @@ impl<'a> PVSearch<'a> {
                 // For moves which are not the first move searched at a PV node, or for moves which
                 // are not in a PV node, perform a zero-window search of the position.
 
-                score = -self.pvs::<false, false, REDUCE>(
-                    depth_to_go - 1,
-                    depth_so_far + 1,
-                    -alpha - Eval::centipawns(1),
-                    -alpha,
-                    &mut child_line,
-                )?;
+                // LMR: Start reducing search depth after some moves
+                if (move_count > 3){
+                    score = -self.pvs::<false, false, REDUCE>(
+                        depth_to_go - 2,
+                        depth_so_far + 1,
+                        -alpha - Eval::centipawns(1),
+                        -alpha,
+                        &mut child_line,
+                    )?;
+                } else {
+                    score = -self.pvs::<false, false, REDUCE>(
+                        depth_to_go - 1,
+                        depth_so_far + 1,
+                        -alpha - Eval::centipawns(1),
+                        -alpha,
+                        &mut child_line,
+                    )?;
+                }
             }
 
             if PV && (move_count == 1 || alpha < score && score < beta) {
