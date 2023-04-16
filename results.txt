@@ -1,0 +1,35 @@
+Tournament details
+------------------------------------
+100 rounds, 1+0 "Bullet"
+
+
+====================================================================
+Score of tomato vs tomato-orig: 60 - 11 - 29 [0.745]
+...      tomato playing White: 24 - 7 - 19  [0.670] 50
+...      tomato playing Black: 36 - 4 - 10  [0.820] 50
+...      White vs Black: 28 - 43 - 29  [0.425] 100
+Elo difference: 186.2 +/- 62.5, LOS: 100.0 %, DrawRatio: 29.0 %
+100 of 100 games finished.
+
+Player: tomato
+   "Draw by 3-fold repetition": 19
+   "Draw by fifty moves rule": 3
+   "Draw by insufficient mating material": 6
+   "Draw by stalemate": 1
+   "Loss: Black mates": 6
+   "Loss: White loses on time": 1
+   "Loss: White mates": 4
+   "Win: Black loses on time": 1
+   "Win: Black mates": 36
+   "Win: White mates": 23
+Player: tomato-orig
+   "Draw by 3-fold repetition": 19
+   "Draw by fifty moves rule": 3
+   "Draw by insufficient mating material": 6
+   "Draw by stalemate": 1
+   "Loss: Black loses on time": 1
+   "Loss: Black mates": 36
+   "Loss: White mates": 23
+   "Win: Black mates": 6
+   "Win: White loses on time": 1
+   "Win: White mates": 4
