@@ -1,6 +1,8 @@
 Tournament details
 ------------------------------------
 100 rounds, 1+0 "Bullet"
+tomato: updated tomato engine with simple LMR
+tomato-orig: original tomato engine
 
 
 ====================================================================
